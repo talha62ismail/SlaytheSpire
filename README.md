@@ -23,7 +23,7 @@
 * Boss
     * Hardest enemy and defeating it means you ve won the game
 ### Game Overview
-A smaller and more flexible version of Slay the Spire with less features. 
+A smaller and simpler version of Slay the Spire with less features. 
 There is going to be only one Act and also only one path to reach to the Boss. 
 Act starts off, and player will enter into different levels turn by turn until it either dies or defeats the boss to win the game.
 The player uses cards to defeat the enemy and playing a card costs energy, each turn the player gets 3 energies in total.
