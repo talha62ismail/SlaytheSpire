@@ -25,7 +25,13 @@
 ### Game Overview
 A smaller and more flexible version of Slay the Spire with less features. 
 There is going to be only one Act and also only one path to reach to the Boss. 
-
+Act starts off, and player will enter into different levels turn by turn until it either dies or defeats the boss to win the game.
+The player uses cards to defeat the enemy and playing a card costs energy, each turn the player gets 3 energies in total.
+Relics and potions give special abilities to the player to enhance the gameplay.
+### Cards
+There will be two types of cards, **Attack** and **Skill**.
+**Attack** will be used by the player to deal damage to the enemies.
+**Skill** cards allow you to gain different things such as block or even draw cards.
 ### UML Class Diagram
 
 ![slay_the_spire_uml](https://github.com/user-attachments/assets/b28554aa-5f8c-4bce-ba13-3770f56dc5ce)
