@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
 
-    cout<<"Eid Mubarak!"<<endl;
+    cout<<"Eid day 2!"<<endl;
 
     return 0;
 }
