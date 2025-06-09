@@ -1,9 +1,6 @@
 #include <iostream>
-using namespace std;
 
-int main(){
-
-    cout<<"Eid 2nd day!"<<endl;
-
+int main() {
+    std::cout<<"Hello world!";
     return 0;
 }
