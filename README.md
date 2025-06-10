@@ -34,7 +34,7 @@ There will be two types of cards, **Attack** and **Skill**.
 **Skill** cards allow you to gain different things such as block or even draw cards.
 ### UML Class Diagram
 
-![slay_the_spire_uml](https://github.com/user-attachments/assets/b28554aa-5f8c-4bce-ba13-3770f56dc5ce)
+![slay_the_spire_uml](https://github.com/user-attachments/assets/d0533d2c-72c0-4efa-9b15-cb020fdf5f3c)
 
 
 ### Flow Diagram
