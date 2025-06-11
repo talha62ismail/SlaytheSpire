@@ -1,7 +1,7 @@
 #include <iostream>
 #include "card.h"
 
-class attackcard :public Card {
+class AttackCard :public Card {
 private:
 	int damage;
 	int enemies_attacked;

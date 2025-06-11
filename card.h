@@ -1,5 +1,8 @@
+#ifndef CARD_H
+#define CARD_H
 #include <iostream>
 #include "enemy.h"
+#include "player.h"
 #include "String.h"
 using namespace std;
 
@@ -8,5 +11,7 @@ protected:
 	String title;
 	int cost;
 public:
-	virtual void play(Enemy enemy);
+	virtual void play(Player player, Enemy enemy);
 };
+
+#endif

@@ -1,3 +1,5 @@
+#ifndef PLAYER_H
+#define PLAYER_H
 #include <iostream>
 #include "character.h"
 #include "card.h"
@@ -5,7 +7,7 @@
 #include "relic.h"
 using namespace std;
 
-class Player : public Character {
+class Player : virtual Character {
 private:
 	int gold;
 	int block;
@@ -21,3 +23,5 @@ public:
 	void apply_relic(int index);
 	void add_item(Item item);
 };
+
+#endif

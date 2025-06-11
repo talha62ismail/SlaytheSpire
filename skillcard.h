@@ -1,7 +1,7 @@
 #include <iostream>
 #include "card.h"
 
-class skillcard :public Card {
+class SkillCard :public Card {
 private:
 	String type;
 	int amount;
