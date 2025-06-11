@@ -1,3 +1,5 @@
+#ifndef CHARACTER_H
+#define CHARACTER_H
 #include <iostream>
 #include "String.h"
 using namespace std;
@@ -15,3 +17,4 @@ public:
 	void heal(int amount);
 	virtual void die();
 };
+#endif

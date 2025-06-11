@@ -2,7 +2,6 @@
 #define CARD_H
 #include <iostream>
 #include "enemy.h"
-#include "player.h"
 #include "String.h"
 using namespace std;
 

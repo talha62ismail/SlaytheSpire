@@ -1,3 +1,5 @@
+#ifndef POTION_H
+#define POTION_H
 #include <iostream>
 #include "item.h"
 using namespace std;
@@ -5,3 +7,5 @@ using namespace std;
 class Potion : public Item {
 
 };
+
+#endif

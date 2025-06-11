@@ -1,3 +1,5 @@
+#ifndef ATTACKCARD_H
+#define ATTACKCARD_H
 #include <iostream>
 #include "card.h"
 
@@ -8,3 +10,5 @@ private:
 public:
 	virtual void play(Enemy enemy);
 };
+
+#endif
