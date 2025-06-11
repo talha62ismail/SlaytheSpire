@@ -345,6 +345,36 @@ String operator+(String first, String other) {
 	result.str[result.l] = '\0';
 	return result;
 }
+String String::operator=(const String& other){
+	if (this != &other) {
+		delete[] this->str;
+		this->str = new char[other.c];
+		for (int i = 0; i < other.l; i++)
+		{
+			this->str[i] = other.str[i];
+		}
+		this->str[this->l] = '\0';
+		this->c = other.c;
+		this->l = other.l;
+		return *this;
+	}
+}
+bool String::operator==(const String& other){
+	if (this->l > other.l)
+		return false;
+	else if (this->l < other.l)
+		return false;
+	else {
+		char* temp1 = new char[this->l];
+		char* temp2 = new char[other.l];
+		temp1 = tolower(this->str, this->l);
+		temp2 = tolower(other.str, other.l);
+		for (int i = 0;i < this->l;i++)
+			if (temp1[i] != temp2[i])
+				return false;
+	}
+	return true;
+}
 ostream& operator<<(ostream& os, const String& obj) {
 
 	os << obj.str;
