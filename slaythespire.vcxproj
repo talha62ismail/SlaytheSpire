@@ -127,17 +127,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="character.cpp" />
-    <ClCompile Include="enemy.cpp" />
     <ClCompile Include="maingame.cpp" />
-    <ClCompile Include="player.cpp" />
-    <ClCompile Include="String.cpp" />
+    <ClCompile Include="src\attackcard.cpp" />
+    <ClCompile Include="src\card.cpp" />
+    <ClCompile Include="src\character.cpp" />
+    <ClCompile Include="src\enemy.cpp" />
+    <ClCompile Include="src\item.cpp" />
+    <ClCompile Include="src\player.cpp" />
+    <ClCompile Include="src\potion.cpp" />
+    <ClCompile Include="src\relic.cpp" />
+    <ClCompile Include="src\skillcard.cpp" />
+    <ClCompile Include="src\String.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="character.h" />
-    <ClInclude Include="enemy.h" />
-    <ClInclude Include="player.h" />
-    <ClInclude Include="String.h" />
+    <ClInclude Include="src\attackcard.h" />
+    <ClInclude Include="src\card.h" />
+    <ClInclude Include="src\character.h" />
+    <ClInclude Include="src\enemy.h" />
+    <ClInclude Include="src\item.h" />
+    <ClInclude Include="src\player.h" />
+    <ClInclude Include="src\potion.h" />
+    <ClInclude Include="src\relic.h" />
+    <ClInclude Include="src\skillcard.h" />
+    <ClInclude Include="src\String.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -5,7 +5,7 @@
 using namespace std;
 
 class Relic:public Item {
-
+	void apply();
 };
 
 #endif
