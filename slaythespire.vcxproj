@@ -139,6 +139,7 @@
     <ClCompile Include="src\potion.cpp" />
     <ClCompile Include="src\relic.cpp" />
     <ClCompile Include="src\skillcard.cpp" />
+    <ClCompile Include="src\startwindow.cpp" />
     <ClCompile Include="src\String.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +154,7 @@
     <ClInclude Include="src\potion.h" />
     <ClInclude Include="src\relic.h" />
     <ClInclude Include="src\skillcard.h" />
+    <ClInclude Include="src\startwindow.h" />
     <ClInclude Include="src\String.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

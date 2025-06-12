@@ -1,9 +1,8 @@
 #include <iostream>
 #include "src/String.h"
 #include "raylib.h"
+#include "src/startwindow.h"
 using namespace std;
-
-void startwindow(Texture2D background);
 
 int main() {
 
@@ -26,19 +25,3 @@ int main() {
 	return 0;
 }
 
-void startwindow(Texture2D background) {
-    Rectangle start_button = { 540,335,200,50 };
-
-    ClearBackground(RAYWHITE);
-    DrawTexture(background, 0, 0, WHITE);
-    DrawRectangleRec(start_button, BLACK);
-    DrawRectangleLines(545, 340, 190, 40, WHITE);
-    DrawText("START", start_button.x + 60, start_button.y + 15, 20, WHITE);
-
-    if (CheckCollisionPointRec(GetMousePosition(), start_button)) {
-        if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
-        {
-            cout << "GAME STARTED!";
-        }
-    }
-}
