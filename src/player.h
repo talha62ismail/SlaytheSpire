@@ -5,6 +5,8 @@
 #include "card.h"
 #include "potion.h"
 #include "relic.h"
+#include "vector.h"
+#include <random>
 using namespace std;
 
 class Item;
@@ -17,9 +19,9 @@ private:
 	int gold;
 	int block;
 	Card* deck;
-	Card* hand;
-	Potion* potions;
-	Relic* relics;
+	MyVector<Card> hand;
+	MyVector<Potion> potions;
+	MyVector<Relic> relics;
 public:
 	void draw_card();
 	void play_card(int index);

@@ -1,7 +1,12 @@
 #include "player.h"
 
 void Player::draw_card() {
-
+	int index;
+	random_device rd;
+	uniform_int_distribution<int> dist(1, 30);
+	index = dist(rd);
+	Card newcard = deck[index];
+	hand.push(newcard);
 }
 void Player::play_card(int index) {
 
