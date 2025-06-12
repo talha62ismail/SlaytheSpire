@@ -57,6 +57,9 @@
     <ClCompile Include="src\startwindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\enemywindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\attackcard.h">
@@ -96,6 +99,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\startwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\enemywindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

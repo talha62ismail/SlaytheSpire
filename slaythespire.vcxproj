@@ -133,6 +133,7 @@
     <ClCompile Include="src\character.cpp" />
     <ClCompile Include="src\chest.cpp" />
     <ClCompile Include="src\enemy.cpp" />
+    <ClCompile Include="src\enemywindow.cpp" />
     <ClCompile Include="src\item.cpp" />
     <ClCompile Include="src\merchant.cpp" />
     <ClCompile Include="src\player.cpp" />
@@ -148,6 +149,7 @@
     <ClInclude Include="src\character.h" />
     <ClInclude Include="src\chest.h" />
     <ClInclude Include="src\enemy.h" />
+    <ClInclude Include="src\enemywindow.h" />
     <ClInclude Include="src\item.h" />
     <ClInclude Include="src\merchant.h" />
     <ClInclude Include="src\player.h" />

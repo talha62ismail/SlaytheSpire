@@ -5,6 +5,6 @@
 #include "raylib.h"
 using namespace std;
 
-void startwindow(Texture2D background);
+int startwindow(Texture2D background);
 
 #endif

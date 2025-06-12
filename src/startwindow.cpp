@@ -1,6 +1,6 @@
 #include "startwindow.h"
 
-void startwindow(Texture2D background) {
+int startwindow(Texture2D background) {
     Rectangle start_button = { 540,335,200,50 };
 
     ClearBackground(RAYWHITE);
@@ -12,7 +12,7 @@ void startwindow(Texture2D background) {
     if (CheckCollisionPointRec(GetMousePosition(), start_button)) {
         if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
         {
-            cout << "GAME STARTED!";
+            return 1;
         }
     }
 }

@@ -16,5 +16,6 @@ public:
 	void apply_damage(int amount);
 	void heal(int amount);
 	virtual void die();
+	String getname();
 };
 #endif

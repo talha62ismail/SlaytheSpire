@@ -17,3 +17,6 @@ void Character::heal(int amount) {
 void Character::die() {
 	HP = 0;
 }
+String Character::getname() {
+	return this->name;
+}
