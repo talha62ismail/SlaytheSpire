@@ -1,5 +1,5 @@
 #include "attackcard.h"
 
-void AttackCard::play(Enemy enemy) {
+void AttackCard::play(Character& enemy) {
 	enemy.apply_damage(damage);
 }

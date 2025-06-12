@@ -7,6 +7,11 @@
 #include "relic.h"
 using namespace std;
 
+class Item;
+class Card;
+class Potion;
+class Relic;
+
 class Player : virtual Character {
 private:
 	int gold;

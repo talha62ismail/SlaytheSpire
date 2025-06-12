@@ -6,6 +6,8 @@
 #include "String.h"
 using namespace std;
 
+class Player;
+
 class Card {
 protected:
 	String title;

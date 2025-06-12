@@ -131,8 +131,10 @@
     <ClCompile Include="src\attackcard.cpp" />
     <ClCompile Include="src\card.cpp" />
     <ClCompile Include="src\character.cpp" />
+    <ClCompile Include="src\chest.cpp" />
     <ClCompile Include="src\enemy.cpp" />
     <ClCompile Include="src\item.cpp" />
+    <ClCompile Include="src\merchant.cpp" />
     <ClCompile Include="src\player.cpp" />
     <ClCompile Include="src\potion.cpp" />
     <ClCompile Include="src\relic.cpp" />
@@ -143,8 +145,10 @@
     <ClInclude Include="src\attackcard.h" />
     <ClInclude Include="src\card.h" />
     <ClInclude Include="src\character.h" />
+    <ClInclude Include="src\chest.h" />
     <ClInclude Include="src\enemy.h" />
     <ClInclude Include="src\item.h" />
+    <ClInclude Include="src\merchant.h" />
     <ClInclude Include="src\player.h" />
     <ClInclude Include="src\potion.h" />
     <ClInclude Include="src\relic.h" />

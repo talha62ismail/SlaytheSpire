@@ -1,5 +1,13 @@
-C:\ITU\OOP\slaythespire\slaythespire\character.cpp;C:\ITU\OOP\slaythespire\slaythespire\x64\Debug\character.obj
-C:\ITU\OOP\slaythespire\slaythespire\enemy.cpp;C:\ITU\OOP\slaythespire\slaythespire\x64\Debug\enemy.obj
 C:\ITU\OOP\slaythespire\slaythespire\maingame.cpp;C:\ITU\OOP\slaythespire\slaythespire\x64\Debug\maingame.obj
-C:\ITU\OOP\slaythespire\slaythespire\player.cpp;C:\ITU\OOP\slaythespire\slaythespire\x64\Debug\player.obj
-C:\ITU\OOP\slaythespire\slaythespire\String.cpp;C:\ITU\OOP\slaythespire\slaythespire\x64\Debug\String.obj
+C:\ITU\OOP\slaythespire\slaythespire\src\attackcard.cpp;C:\ITU\OOP\slaythespire\slaythespire\x64\Debug\attackcard.obj
+C:\ITU\OOP\slaythespire\slaythespire\src\card.cpp;C:\ITU\OOP\slaythespire\slaythespire\x64\Debug\card.obj
+C:\ITU\OOP\slaythespire\slaythespire\src\character.cpp;C:\ITU\OOP\slaythespire\slaythespire\x64\Debug\character.obj
+C:\ITU\OOP\slaythespire\slaythespire\src\chest.cpp;C:\ITU\OOP\slaythespire\slaythespire\x64\Debug\chest.obj
+C:\ITU\OOP\slaythespire\slaythespire\src\enemy.cpp;C:\ITU\OOP\slaythespire\slaythespire\x64\Debug\enemy.obj
+C:\ITU\OOP\slaythespire\slaythespire\src\item.cpp;C:\ITU\OOP\slaythespire\slaythespire\x64\Debug\item.obj
+C:\ITU\OOP\slaythespire\slaythespire\src\merchant.cpp;C:\ITU\OOP\slaythespire\slaythespire\x64\Debug\merchant.obj
+C:\ITU\OOP\slaythespire\slaythespire\src\player.cpp;C:\ITU\OOP\slaythespire\slaythespire\x64\Debug\player.obj
+C:\ITU\OOP\slaythespire\slaythespire\src\potion.cpp;C:\ITU\OOP\slaythespire\slaythespire\x64\Debug\potion.obj
+C:\ITU\OOP\slaythespire\slaythespire\src\relic.cpp;C:\ITU\OOP\slaythespire\slaythespire\x64\Debug\relic.obj
+C:\ITU\OOP\slaythespire\slaythespire\src\skillcard.cpp;C:\ITU\OOP\slaythespire\slaythespire\x64\Debug\skillcard.obj
+C:\ITU\OOP\slaythespire\slaythespire\src\String.cpp;C:\ITU\OOP\slaythespire\slaythespire\x64\Debug\String.obj
