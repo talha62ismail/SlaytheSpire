@@ -1,6 +1,6 @@
 ﻿  maingame.cpp
-C:\ITU\OOP\slaythespire\slaythespire\maingame.cpp(21,63): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\maingame.cpp(21,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\maingame.cpp(36,59): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\maingame.cpp(36,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   slaythespire.vcxproj -> C:\ITU\OOP\slaythespire\x64\Debug\slaythespire.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.
