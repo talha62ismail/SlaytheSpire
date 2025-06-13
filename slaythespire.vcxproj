@@ -158,6 +158,7 @@
     <ClInclude Include="src\skillcard.h" />
     <ClInclude Include="src\startwindow.h" />
     <ClInclude Include="src\String.h" />
+    <ClInclude Include="src\vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
