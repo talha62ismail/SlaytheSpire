@@ -9,6 +9,7 @@ private:
 	int damage;
 public:
 	virtual void play(Character& enemy);
+	int getdamage();
 };
 
 #endif
