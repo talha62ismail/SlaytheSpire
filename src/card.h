@@ -14,6 +14,7 @@ protected:
 	int cost;
 public:
 	virtual void play(Player player, Enemy enemy);
+	String gettitle();
 };
 
 #endif

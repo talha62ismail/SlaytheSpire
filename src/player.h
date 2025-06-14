@@ -19,10 +19,10 @@ private:
 	int gold;
 	int block;
 	Card* deck;
-	MyVector<Card> hand;
 	MyVector<Potion> potions;
 	MyVector<Relic> relics;
 public:
+	MyVector<Card> hand;
 	void draw_card();
 	void play_card(int index);
 	void gain_block(int amount);

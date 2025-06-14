@@ -1,4 +1,6 @@
-﻿  maingame.cpp
+﻿  attackcard.cpp
+  card.cpp
+  player.cpp
   skillcard.cpp
   Generating Code...
   slaythespire.vcxproj -> C:\ITU\OOP\slaythespire\x64\Debug\slaythespire.exe
