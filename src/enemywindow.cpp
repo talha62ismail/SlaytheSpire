@@ -11,6 +11,6 @@ int enemywindow(Texture2D background, Texture2D player) {
         {
             cout << "touching player";
         }
-    }   
+    }
     return 1;
 }

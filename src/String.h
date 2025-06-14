@@ -39,6 +39,7 @@ public:
 	friend String operator+(String first, String other);
 	friend ostream& operator<<(ostream& os, const String& obj);
 	friend istream& operator>>(istream& in, String& obj);
+	char* getstring();
 };
 
 #endif

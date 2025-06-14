@@ -422,3 +422,7 @@ char* toupper(char* arr, int size) {
 	}
 	return temp;
 }
+
+char* String::getstring() {
+	return str;
+}

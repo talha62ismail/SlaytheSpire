@@ -10,17 +10,17 @@ int main() {
 
     bool enemyscreen = false;
     int current_screen = 0;
-	InitWindow(1280, 720, "SLAY THE SPIRE");
+    InitWindow(1280, 720, "SLAY THE SPIRE");
     Texture2D background = LoadTexture("assets/mainbackground.png");
     Texture2D enemy_level_background = LoadTexture("assets/enemy_level.png");
     Texture2D player = LoadTexture("assets/ironclad.png");
-    
+
     SetTargetFPS(60);
 
-    while (!WindowShouldClose()) {  
+    while (!WindowShouldClose()) {
         BeginDrawing();
-        
-        if (current_screen == 0) 
+
+        if (current_screen == 0)
             current_screen = startwindow(background);
         else if (current_screen == 1)
             current_screen = enemywindow(enemy_level_background, player);
@@ -32,6 +32,5 @@ int main() {
 
     CloseWindow();
 
-	return 0;
+    return 0;
 }
-
