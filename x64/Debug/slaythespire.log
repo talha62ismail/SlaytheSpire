@@ -1,15 +1,21 @@
-﻿  enemywindow.cpp
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(7,30): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(8,22): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(8,29): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(9,22): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(9,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+﻿  maingame.cpp
+  attackcard.cpp
+  card.cpp
+  enemywindow.cpp
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(9,30): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
 C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(10,22): warning C4305: 'initializing': truncation from 'double' to 'float'
 C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(10,29): warning C4305: 'initializing': truncation from 'double' to 'float'
 C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(11,22): warning C4305: 'initializing': truncation from 'double' to 'float'
 C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(11,29): warning C4305: 'initializing': truncation from 'double' to 'float'
 C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(12,22): warning C4305: 'initializing': truncation from 'double' to 'float'
 C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(12,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(13,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(13,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(14,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(14,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+  player.cpp
+  skillcard.cpp
+  Generating Code...
   slaythespire.vcxproj -> C:\ITU\OOP\slaythespire\x64\Debug\slaythespire.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.

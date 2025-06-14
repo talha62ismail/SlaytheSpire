@@ -1,5 +1,7 @@
 #include "enemywindow.h"
 
+extern int hand_size;
+
 int enemywindow(Texture2D background, Texture2D player) {
     ClearBackground(RAYWHITE);
     DrawTexture(background, 0, 0, WHITE);
@@ -16,5 +18,7 @@ int enemywindow(Texture2D background, Texture2D player) {
     DrawRectangleRec(c4, BROWN);
     DrawRectangleRec(c5, BROWN);
 
+
+    
     return 1;
 }

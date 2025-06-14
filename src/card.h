@@ -9,12 +9,11 @@ using namespace std;
 class Player;
 
 class Card {
-protected:
-	String title;
-	int cost;
 public:
 	virtual void play(Player player, Enemy enemy);
-	String gettitle();
+	String type;
+	int cost;
+	int amount;
 };
 
 #endif

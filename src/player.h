@@ -23,6 +23,7 @@ private:
 	MyVector<Relic> relics;
 public:
 	MyVector<Card> hand;
+	Player(String n, int hp, int g, int b, Card* h);
 	void draw_card();
 	void play_card(int index);
 	void gain_block(int amount);

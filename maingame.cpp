@@ -4,7 +4,10 @@
 #include "src/startwindow.h"
 #include "src/enemy.h"
 #include "src/enemywindow.h"    
+#include "src/card.h"
 using namespace std;
+
+int hand_size = 5;
 
 int main() {
 
@@ -14,6 +17,7 @@ int main() {
     Texture2D background = LoadTexture("assets/mainbackground.png");
     Texture2D enemy_level_background = LoadTexture("assets/enemy_level.png");
     Texture2D player = LoadTexture("assets/ironclad.png");
+    
 
     SetTargetFPS(60);
 
