@@ -345,7 +345,7 @@ String operator+(String first, String other) {
 	result.str[result.l] = '\0';
 	return result;
 }
-String String::operator=(const String& other){
+String& String::operator=(const String& other){
 	if (this != &other) {
 		delete[] this->str;
 		this->str = new char[other.c];
@@ -353,11 +353,11 @@ String String::operator=(const String& other){
 		{
 			this->str[i] = other.str[i];
 		}
-		this->str[this->l] = '\0';
+		this->str[other.l] = '\0';
 		this->c = other.c;
 		this->l = other.l;
-		return *this;
 	}
+	return *this;
 }
 bool String::operator==(const String& other){
 	if (this->l > other.l)
@@ -424,5 +424,9 @@ char* toupper(char* arr, int size) {
 }
 
 char* String::getstring() {
-	return str;
+	char* temp = new char[l + 1];
+	for (int i = 0;i < l;i++)
+		temp[i] = str[i];
+	temp[l] = '\0';
+	return temp;
 }

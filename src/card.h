@@ -14,6 +14,9 @@ public:
 	String type;
 	int cost;
 	int amount;
+	Card(const String& t, int c, int am);
+	Card();
+	char* gettype();
 };
 
 #endif

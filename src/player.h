@@ -19,11 +19,11 @@ private:
 	int gold;
 	int block;
 	Card* deck;
-	MyVector<Potion> potions;
-	MyVector<Relic> relics;
+	/*MyVector<Potion> potions;
+	MyVector<Relic> relics;*/
 public:
 	MyVector<Card> hand;
-	Player(String n, int hp, int g, int b, Card* h);
+	Player(String n, int hp, int g, Card* h);
 	void draw_card();
 	void play_card(int index);
 	void gain_block(int amount);

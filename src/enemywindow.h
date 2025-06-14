@@ -3,8 +3,9 @@
 
 #include <iostream>
 #include "raylib.h"
+#include "player.h"
 using namespace std;
 
-int enemywindow(Texture2D background, Texture2D player);
+int enemywindow(Texture2D background, Texture2D playersprite, Player player);
 
 #endif

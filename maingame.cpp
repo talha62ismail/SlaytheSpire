@@ -18,6 +18,15 @@ int main() {
     Texture2D enemy_level_background = LoadTexture("assets/enemy_level.png");
     Texture2D player = LoadTexture("assets/ironclad.png");
     
+    String type = "Attack Card";
+    Card h[5];  
+    h[0] = Card(type, 1, 10);
+    h[1] = Card(type, 1, 10);
+    h[2] = Card(type, 1, 10);
+    h[3] = Card(type, 1, 10);
+    h[4] = Card(type, 1, 10);
+
+    Player ironclad("Ironclad", 100, 10, h);
 
     SetTargetFPS(60);
 
@@ -27,7 +36,7 @@ int main() {
         if (current_screen == 0)
             current_screen = startwindow(background);
         else if (current_screen == 1)
-            current_screen = enemywindow(enemy_level_background, player);
+            current_screen = enemywindow(enemy_level_background, player, ironclad);
         if (current_screen == 2)
             DrawTexture(background, 0, 0, WHITE);
 

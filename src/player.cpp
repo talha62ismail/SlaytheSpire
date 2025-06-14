@@ -1,5 +1,18 @@
 #include "player.h"
 
+extern int hand_size;
+
+Player::Player(String n, int hp, int g, Card* h) {
+	name = n;
+	HP = hp;
+	maxHP = hp;
+	gold = g;
+	block = 0;
+	for (int i = 0;i < hand_size;i++) {
+		hand.push(h[i]);
+	}
+	deck = nullptr;
+}
 void Player::draw_card() {
 	int index;
 	random_device rd;

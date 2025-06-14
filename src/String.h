@@ -34,7 +34,7 @@ public:
 	void remove_at(int idx);
 	void clear();
 	String operator+(String other);
-	String operator =(const String& str);
+	String& operator=(const String& str);
 	bool operator==(const String& other);
 	friend String operator+(String first, String other);
 	friend ostream& operator<<(ostream& os, const String& obj);
