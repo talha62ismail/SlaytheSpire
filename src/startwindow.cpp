@@ -9,6 +9,8 @@ int startwindow(Texture2D background) {
     DrawRectangleLines(545, 340, 190, 40, WHITE);
     DrawText("START", start_button.x + 60, start_button.y + 15, 20, WHITE);
 
+    DrawText("SLAY THE SPIRE", 335, 100, 70, WHITE);
+
     if (CheckCollisionPointRec(GetMousePosition(), start_button)) {
         if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
         {

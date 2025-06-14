@@ -9,6 +9,7 @@ private:
 	int amount;
 public:
 	virtual void play(Enemy enemy);
+	int getamount();
 };
 
 #endif
