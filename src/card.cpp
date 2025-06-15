@@ -1,6 +1,7 @@
 #include "card.h"
 
 void Card::play(Player& player, Enemy& enemy) {
+	cout << "PLAY CARD!" << endl;
 	if (type == "attack"){
 		enemy.apply_damage(amount);
 	}

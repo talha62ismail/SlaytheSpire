@@ -3,7 +3,7 @@
 extern int hand_size;
 extern int max_energy;
 
-int enemywindow(Texture2D background, Texture2D playersprite, Texture2D enemysprite, Player& player, Enemy& enemy) {
+int enemywindow(Texture2D background, Texture2D playersprite, Texture2D enemysprite, Player& player, Enemy& enemy, bool& playerturn) {
     String temp1 = temp1.itos(player.hand[0].amount);
     String temp2 = temp2.itos(player.hand[1].amount);
     String temp3 = temp3.itos(player.hand[2].amount);
@@ -20,10 +20,6 @@ int enemywindow(Texture2D background, Texture2D playersprite, Texture2D enemyspr
     String temp7 = temp7.itos(enemy.getHP());
     String playerhp = "HP:" + temp6;
     String enemyhp = "HP:" + temp7;
-
-    cout << temp6 << endl;
-    cout << temp7 << endl;
-    cout << playerhp << " - " << enemyhp << endl;
     DrawText(playerhp.getstring(), 40, 250, 30, WHITE);
     DrawText(enemyhp.getstring(), 1145, 240, 30, WHITE);
 
@@ -55,51 +51,61 @@ int enemywindow(Texture2D background, Texture2D playersprite, Texture2D enemyspr
     DrawText(temp4.getstring(), 866.2, 203.1, 20, WHITE);
     DrawText(temp5.getstring(), 1062.2, 203.1, 20, WHITE);
 
-    bool playerturn = true;
     if (playerturn) {
+        Rectangle endturn = { 300, 600, 150, 50 };
+        DrawRectangleRec(endturn, DARKGRAY);
+        DrawText("End Turn", 320, 615, 20, WHITE);
+
+        if (CheckCollisionPointRec(GetMousePosition(), endturn)){
+            if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
+                playerturn = false;
+                player.energy = max_energy;
+            }
+        }
+
         if (player.hand[0].cost <= player.energy) {
             if (CheckCollisionPointRec(GetMousePosition(), c1)) {
-                if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
+                if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
                     player.hand[0].play(player, enemy);
+                    player.energy -= player.hand[0].cost;
+                }
             }
-            player.energy -= player.hand[0].cost;
         }
-        else if (player.hand[1].cost <= player.energy) {
+        if (player.hand[1].cost <= player.energy) {
             if (CheckCollisionPointRec(GetMousePosition(), c2)) {
-                if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
+                if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
                     player.hand[1].play(player, enemy);
+                    player.energy -= player.hand[1].cost;
+                }
             }
-            player.energy -= player.hand[1].cost;
         }
-        else if (player.hand[2].cost <= player.energy) {
+        if (player.hand[2].cost <= player.energy) {
             if (CheckCollisionPointRec(GetMousePosition(), c3)) {
-                if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
+                if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
                     player.hand[2].play(player, enemy);
+                    player.energy -= player.hand[2].cost;
+                }
             }
-            player.energy -= player.hand[2].cost;
         }
-        else if (player.hand[3].cost <= player.energy) {
+        if (player.hand[3].cost <= player.energy) {
             if (CheckCollisionPointRec(GetMousePosition(), c4)) {
-                if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
+                if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
                     player.hand[3].play(player, enemy);
+                    player.energy -= player.hand[3].cost;
+                }
             }
-            player.energy -= player.hand[3].cost;
         }
-        else if (player.hand[4].cost <= player.energy) {
+        if (player.hand[4].cost <= player.energy) {
             if (CheckCollisionPointRec(GetMousePosition(), c5)) {
-                if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
+                if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
                     player.hand[4].play(player, enemy);
+                    player.energy -= player.hand[4].cost;
+                }
             }
-            player.energy -= player.hand[4].cost;
         }
 
-        if (player.energy <= 0) {
-            playerturn = false;
-        }
     }
-
-
-    if (!playerturn) {
+    else {
         player.apply_damage(enemy.attack);
         playerturn = true;
     }

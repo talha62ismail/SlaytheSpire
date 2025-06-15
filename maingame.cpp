@@ -14,6 +14,7 @@ int main() {
 
     bool enemyscreen = false;
     int current_screen = 0;
+    bool turn = true;
     InitWindow(1280, 720, "SLAY THE SPIRE");
     Texture2D background = LoadTexture("assets/mainbackground.png");
     Texture2D enemy_level_background = LoadTexture("assets/enemy_level.png");
@@ -39,7 +40,7 @@ int main() {
         if (current_screen == 0)
             current_screen = startwindow(background);
         else if (current_screen == 1)
-            current_screen = enemywindow(enemy_level_background, playersprite, enemysprite, ironclad, slaver);
+            current_screen = enemywindow(enemy_level_background, playersprite, enemysprite, ironclad, slaver, turn);
         if (current_screen == 2)
             DrawTexture(background, 0, 0, WHITE);
 
