@@ -22,7 +22,12 @@ int enemywindow(Texture2D background, Texture2D playersprite, Texture2D enemyspr
     String enemyhp = "HP:" + temp7;
     DrawText(playerhp.getstring(), 40, 250, 30, WHITE);
     DrawText(enemyhp.getstring(), 1145, 240, 30, WHITE);
-
+    String temp8 = temp8.itos(player.energy);
+    String playerenergy = "Energies: " + temp8;
+    DrawText(playerenergy.getstring(), 100, 40, 20, WHITE);
+    String temp9 = temp9.itos(player.getblock());
+    String playerblock = "Block: " + temp9;
+    DrawText(playerblock.getstring(), 210, 350, 20, WHITE);
     DrawText("LEVEL: ENEMY", 524.2, 40, 30, WHITE);
 
     Rectangle c1 = { 167.8, 146.4, 160, 140 };
@@ -110,7 +115,8 @@ int enemywindow(Texture2D background, Texture2D playersprite, Texture2D enemyspr
         playerturn = true;
     }
 
-
+    if (enemy.getHP() <= 0)
+        return 2;
 
     return 1;
 }

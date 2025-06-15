@@ -37,12 +37,17 @@ int main() {
     while (!WindowShouldClose()) {
         BeginDrawing();
 
+        if (ironclad.getHP() <= 0)
+            current_screen = -1;
+
         if (current_screen == 0)
             current_screen = startwindow(background);
         else if (current_screen == 1)
             current_screen = enemywindow(enemy_level_background, playersprite, enemysprite, ironclad, slaver, turn);
-        if (current_screen == 2)
+        else if (current_screen == -1)
             DrawTexture(background, 0, 0, WHITE);
+        else if (current_screen == 2)
+            DrawTexture(background, 0, 0, YELLOW);
 
         EndDrawing();
     }
