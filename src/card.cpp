@@ -12,7 +12,7 @@ void Card::play(Player& player, Enemy& enemy) {
 			player.draw_card();
 	}
 }
-Card::Card(const String& t, int c, int am){
+Card::Card(const String& t, int am, int c){
 	type = t;
 	cost = c;
 	amount = am;
@@ -21,3 +21,5 @@ Card::Card(): type("null"), cost(0), amount(0){}
 char* Card::gettype() {
 	return type.getstring();
 }
+
+

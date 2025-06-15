@@ -1,26 +1,32 @@
 #include "player.h"
 
 extern int hand_size;
+extern Card* deck;
 
-Player::Player(String n, int hp, int g, Card* h) {
+Player::Player(String n, int hp, int g, MyVector<Card> d) {
 	name = n;
 	HP = hp;
 	maxHP = hp;
 	gold = g;
 	block = 0;
-	for (int i = 0;i < hand_size;i++) {
-		hand.push(h[i]);
-	}
-	deck = nullptr;
 	energy = 3;
+	deck = d;
+	int index;
+	for (int i = 0;i < hand_size;i++) {
+		random_device rd;
+		uniform_int_distribution<int> dist(0, 29);
+		index = dist(rd);
+		Card newcard = deck[index];
+		hand.push(newcard);
+	}
 }
 void Player::draw_card() {
 	int index;
 	random_device rd;
-	uniform_int_distribution<int> dist(1, 30);
+	uniform_int_distribution<int> dist(0, 29);
 	index = dist(rd);
 	Card newcard = deck[index];
-	hand.push(newcard);
+	hand[0] = newcard;
 }
 void Player::play_card(int index) {
 
@@ -42,5 +48,7 @@ int Player::getblock() {
 void Player::apply_damage(int amount) {
 	if (block < amount)
 		HP -= (amount - block);
-	block = 0;
+	block -= amount;
+	if (block < 0)
+		block = 0;
 }

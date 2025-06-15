@@ -18,13 +18,13 @@ class Player : public Character {
 private:
 	int gold;
 	int block;
-	Card* deck;
+	MyVector<Card> deck;
 	/*MyVector<Potion> potions;
 	MyVector<Relic> relics;*/
 public:
 	MyVector<Card> hand;
 	int energy;
-	Player(String n, int hp, int g, Card* h);
+	Player(String n, int hp, int g, MyVector<Card> d);
 	void draw_card();
 	void play_card(int index);
 	void gain_block(int amount);
