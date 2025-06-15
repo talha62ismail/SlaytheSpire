@@ -9,6 +9,14 @@ int enemywindow(Texture2D background, Texture2D playersprite, Texture2D enemyspr
     String temp3 = temp3.itos(player.hand[2].amount);
     String temp4 = temp4.itos(player.hand[3].amount);
     String temp5 = temp5.itos(player.hand[4].amount);
+
+    String t1 = t1.itos(player.hand[0].cost);
+    String t2 = t2.itos(player.hand[1].cost);
+    String t3 = t3.itos(player.hand[2].cost);
+    String t4 = t4.itos(player.hand[3].cost);
+    String t5 = t5.itos(player.hand[4].cost);
+    
+
     ClearBackground(RAYWHITE);
     DrawTexture(background, 0, 0, WHITE);
 
@@ -55,6 +63,21 @@ int enemywindow(Texture2D background, Texture2D playersprite, Texture2D enemyspr
     DrawText(temp3.getstring(), 670.2, 203.1, 20, WHITE);
     DrawText(temp4.getstring(), 866.2, 203.1, 20, WHITE);
     DrawText(temp5.getstring(), 1062.2, 203.1, 20, WHITE);
+    DrawText("Cost = ", 180.4, 243.1, 20, WHITE);
+    DrawText("Cost = ", 384.2, 243.1, 20, WHITE);
+    DrawText("Cost = ", 580.2, 243.1, 20, WHITE);
+    DrawText("Cost = ", 776.2, 243.1, 20, WHITE);
+    DrawText("Cost = ", 972.2, 243.1, 20, WHITE);
+    DrawText(t1.getstring(), 277.4, 243.1, 20, WHITE);
+    DrawText(t2.getstring(), 474.2, 243.1, 20, WHITE);
+    DrawText(t3.getstring(), 670.2, 243.1, 20, WHITE);
+    DrawText(t4.getstring(), 866.2, 243.1, 20, WHITE);
+    DrawText(t5.getstring(), 1062.2, 243.1, 20, WHITE);
+    static bool card1 = true;
+    static bool card2 = true;
+    static bool card3 = true;
+    static bool card4 = true;
+    static bool card5 = true;
 
     if (playerturn) {
         Rectangle endturn = { 300, 600, 150, 50 };
@@ -68,43 +91,48 @@ int enemywindow(Texture2D background, Texture2D playersprite, Texture2D enemyspr
             }
         }
 
-        if (player.hand[0].cost <= player.energy) {
+        if (player.hand[0].cost <= player.energy && card1) {
             if (CheckCollisionPointRec(GetMousePosition(), c1)) {
                 if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
                     player.hand[0].play(player, enemy);
                     player.energy -= player.hand[0].cost;
+                    card1 = false;
                 }
             }
         }
-        if (player.hand[1].cost <= player.energy) {
+        if (player.hand[1].cost <= player.energy && card2) {
             if (CheckCollisionPointRec(GetMousePosition(), c2)) {
                 if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
                     player.hand[1].play(player, enemy);
                     player.energy -= player.hand[1].cost;
+                    card2 = false;
                 }
             }
         }
-        if (player.hand[2].cost <= player.energy) {
+        if (player.hand[2].cost <= player.energy && card3) {
             if (CheckCollisionPointRec(GetMousePosition(), c3)) {
                 if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
                     player.hand[2].play(player, enemy);
                     player.energy -= player.hand[2].cost;
+                    card3 = false;
                 }
             }
         }
-        if (player.hand[3].cost <= player.energy) {
+        if (player.hand[3].cost <= player.energy && card4) {
             if (CheckCollisionPointRec(GetMousePosition(), c4)) {
                 if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
                     player.hand[3].play(player, enemy);
                     player.energy -= player.hand[3].cost;
+                    card4 = false;
                 }
             }
         }
-        if (player.hand[4].cost <= player.energy) {
+        if (player.hand[4].cost <= player.energy && card5) {
             if (CheckCollisionPointRec(GetMousePosition(), c5)) {
                 if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
                     player.hand[4].play(player, enemy);
                     player.energy -= player.hand[4].cost;
+                    card5 = false;
                 }
             }
         }
@@ -113,6 +141,8 @@ int enemywindow(Texture2D background, Texture2D playersprite, Texture2D enemyspr
     else {
         player.apply_damage(enemy.attack);
         playerturn = true;
+        card1 = card2 = card3 = card4 = card5 = true;
+        player.shuffle_hand();
     }
 
     if (enemy.getHP() <= 0)

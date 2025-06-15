@@ -28,6 +28,16 @@ void Player::draw_card() {
 	Card newcard = deck[index];
 	hand[0] = newcard;
 }
+void Player::shuffle_hand() {
+	int index;
+	for (int i = 0;i < hand_size;i++) {
+		random_device rd;
+		uniform_int_distribution<int> dist(0, 29);
+		index = dist(rd);
+		Card newcard = deck[index];
+		hand[i] = newcard;
+	}
+}
 void Player::play_card(int index) {
 
 }

@@ -26,6 +26,7 @@ public:
 	int energy;
 	Player(String n, int hp, int g, MyVector<Card> d);
 	void draw_card();
+	void shuffle_hand();
 	void play_card(int index);
 	void gain_block(int amount);
 	void use_potion(int index);

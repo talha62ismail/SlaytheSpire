@@ -23,8 +23,8 @@ int main() {
     Card c5(typeAttack, 6, 1);
     Card c6(typeAttack, 8, 2);
     Card c7(typeAttack, 8, 2);
-    Card c8(typeAttack, 4, 0);
-    Card c9(typeAttack, 4, 0);
+    Card c8(typeAttack, 4, 1);
+    Card c9(typeAttack, 4, 1);
     Card c10(typeAttack, 10, 3);
     Card c11(typeAttack, 5, 1);
     Card c12(typeAttack, 5, 1);
@@ -37,8 +37,8 @@ int main() {
     Card c19(typeBlock, 5, 1);
     Card c20(typeBlock, 8, 2);
     Card c21(typeBlock, 8, 2);
-    Card c22(typeBlock, 3, 0);
-    Card c23(typeBlock, 3, 0);
+    Card c22(typeBlock, 3, 1);
+    Card c23(typeBlock, 3, 1);
     Card c24(typeBlock, 10, 3);
     Card c25(typeBlock, 6, 1);
     Card c26(typeBlock, 6, 1);
@@ -112,10 +112,12 @@ int main() {
             current_screen = startwindow(background);
         else if (current_screen == 1)
             current_screen = enemywindow(enemy_level_background, playersprite, enemysprite, ironclad, slaver, turn);
+        else if (current_screen == 2) {
+            DrawTexture(background, 0, 0, WHITE);
+            DrawText("ENEMY KILLED!", 250, 270, 100, WHITE);
+        }
         else if (current_screen == -1)
             gameoverwindow();
-        else if (current_screen == 2)
-            DrawTexture(background, 0, 0, WHITE);
 
         EndDrawing();
     }
