@@ -17,5 +17,6 @@ public:
 	void heal(int amount);
 	virtual void die();
 	String getname();
+	int getHP();
 };
 #endif

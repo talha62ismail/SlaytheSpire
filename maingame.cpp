@@ -16,8 +16,9 @@ int main() {
     InitWindow(1280, 720, "SLAY THE SPIRE");
     Texture2D background = LoadTexture("assets/mainbackground.png");
     Texture2D enemy_level_background = LoadTexture("assets/enemy_level.png");
-    Texture2D player = LoadTexture("assets/ironclad.png");
-    
+    Texture2D playersprite = LoadTexture("assets/ironclad.png");
+    Texture2D enemysprite = LoadTexture("assets/slaver.png");
+
     String type = "Attack Card";
     Card h[5];  
     h[0] = Card(type, 1, 10);
@@ -28,6 +29,8 @@ int main() {
 
     Player ironclad("Ironclad", 100, 10, h);
 
+    Enemy slaver("Slaver", 40, "Basic", 10);
+
     SetTargetFPS(60);
 
     while (!WindowShouldClose()) {
@@ -36,7 +39,7 @@ int main() {
         if (current_screen == 0)
             current_screen = startwindow(background);
         else if (current_screen == 1)
-            current_screen = enemywindow(enemy_level_background, player, ironclad);
+            current_screen = enemywindow(enemy_level_background, playersprite, enemysprite, ironclad, slaver);
         if (current_screen == 2)
             DrawTexture(background, 0, 0, WHITE);
 

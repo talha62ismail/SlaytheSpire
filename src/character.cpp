@@ -20,3 +20,6 @@ void Character::die() {
 String Character::getname() {
 	return this->name;
 }
+int Character::getHP(){
+	return HP;
+}

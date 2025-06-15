@@ -16,6 +16,7 @@ public:
 	String();
 	String(const String& obj);
 	String(const char* other);
+	String(const char ch);
 	String(char ch, int val);
 	~String();
 	char& operator[](int i)const;

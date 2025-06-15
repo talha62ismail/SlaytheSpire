@@ -14,7 +14,7 @@ class Card;
 class Potion;
 class Relic;
 
-class Player : virtual Character {
+class Player : public Character {
 private:
 	int gold;
 	int block;

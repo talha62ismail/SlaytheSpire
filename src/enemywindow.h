@@ -6,6 +6,6 @@
 #include "player.h"
 using namespace std;
 
-int enemywindow(Texture2D background, Texture2D playersprite, Player player);
+int enemywindow(Texture2D background, Texture2D playersprite, Texture2D enemysprite, Player& player, Enemy& enemy);
 
 #endif

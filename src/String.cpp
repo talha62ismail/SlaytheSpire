@@ -22,6 +22,13 @@ String::String(const String& obj) {
 	for (int i = 0; i < this->l; i++)
 		this->str[i] = obj.str[i];
 }
+String::String(const char ch) {
+	this->c = 2;
+	this->l = 1;
+	this->str = new char[this->c];
+	this->str[0] = ch;
+	this->str[1] = '\0';
+}
 String::String(const char* other) {
 
 	this->l = len(other);
@@ -224,6 +231,7 @@ String String::itos(int num) {
 		}
 		num /= 10;
 	}
+	s1.str[l] = '\0';
 	return s1;
 }
 bool String::isequal(const String& other) {
