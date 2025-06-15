@@ -8,6 +8,7 @@
 using namespace std;
 
 int hand_size = 5;
+int max_energy = 3;
 
 int main() {
 
@@ -19,16 +20,15 @@ int main() {
     Texture2D playersprite = LoadTexture("assets/ironclad.png");
     Texture2D enemysprite = LoadTexture("assets/slaver.png");
 
-    String type = "Attack Card";
+    String type = "Attack";
     Card h[5];  
     h[0] = Card(type, 1, 10);
     h[1] = Card(type, 1, 10);
     h[2] = Card(type, 1, 10);
     h[3] = Card(type, 1, 10);
-    h[4] = Card(type, 1, 10);
+    h[4] = Card("Block", 1, 10);
 
     Player ironclad("Ironclad", 100, 10, h);
-
     Enemy slaver("Slaver", 40, "Basic", 10);
 
     SetTargetFPS(60);
@@ -45,7 +45,6 @@ int main() {
 
         EndDrawing();
     }
-
     CloseWindow();
 
     return 0;

@@ -1,6 +1,7 @@
 #include "enemywindow.h"
 
 extern int hand_size;
+extern int max_energy;
 
 int enemywindow(Texture2D background, Texture2D playersprite, Texture2D enemysprite, Player& player, Enemy& enemy) {
     String temp1 = temp1.itos(player.hand[0].amount);
@@ -10,15 +11,19 @@ int enemywindow(Texture2D background, Texture2D playersprite, Texture2D enemyspr
     String temp5 = temp5.itos(player.hand[4].amount);
     ClearBackground(RAYWHITE);
     DrawTexture(background, 0, 0, WHITE);
-    
+
     DrawTexture(playersprite, 0, 280, WHITE);
     DrawTexture(enemysprite, 1090, 270, WHITE);
     DrawText(player.getname().getstring(), 70, 660, 30, WHITE);
     DrawText(enemy.getname().getstring(), 1145, 560, 30, WHITE);
     String temp6 = temp6.itos(player.getHP());
     String temp7 = temp7.itos(enemy.getHP());
-    String playerhp = "HP = " + temp6;
-    String enemyhp = "HP = " + temp7;
+    String playerhp = "HP:" + temp6;
+    String enemyhp = "HP:" + temp7;
+
+    cout << temp6 << endl;
+    cout << temp7 << endl;
+    cout << playerhp << " - " << enemyhp << endl;
     DrawText(playerhp.getstring(), 40, 250, 30, WHITE);
     DrawText(enemyhp.getstring(), 1145, 240, 30, WHITE);
 
@@ -50,12 +55,56 @@ int enemywindow(Texture2D background, Texture2D playersprite, Texture2D enemyspr
     DrawText(temp4.getstring(), 866.2, 203.1, 20, WHITE);
     DrawText(temp5.getstring(), 1062.2, 203.1, 20, WHITE);
 
-    if (CheckCollisionPointRec(GetMousePosition(), c1)) {
-        if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
-            player.apply_damage(10);
+    bool playerturn = true;
+    if (playerturn) {
+        if (player.hand[0].cost <= player.energy) {
+            if (CheckCollisionPointRec(GetMousePosition(), c1)) {
+                if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
+                    player.hand[0].play(player, enemy);
+            }
+            player.energy -= player.hand[0].cost;
         }
-            
+        else if (player.hand[1].cost <= player.energy) {
+            if (CheckCollisionPointRec(GetMousePosition(), c2)) {
+                if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
+                    player.hand[1].play(player, enemy);
+            }
+            player.energy -= player.hand[1].cost;
+        }
+        else if (player.hand[2].cost <= player.energy) {
+            if (CheckCollisionPointRec(GetMousePosition(), c3)) {
+                if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
+                    player.hand[2].play(player, enemy);
+            }
+            player.energy -= player.hand[2].cost;
+        }
+        else if (player.hand[3].cost <= player.energy) {
+            if (CheckCollisionPointRec(GetMousePosition(), c4)) {
+                if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
+                    player.hand[3].play(player, enemy);
+            }
+            player.energy -= player.hand[3].cost;
+        }
+        else if (player.hand[4].cost <= player.energy) {
+            if (CheckCollisionPointRec(GetMousePosition(), c5)) {
+                if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
+                    player.hand[4].play(player, enemy);
+            }
+            player.energy -= player.hand[4].cost;
+        }
+
+        if (player.energy <= 0) {
+            playerturn = false;
+        }
     }
-    
+
+
+    if (!playerturn) {
+        player.apply_damage(enemy.attack);
+        playerturn = true;
+    }
+
+
+
     return 1;
 }

@@ -1,45 +1,45 @@
 ﻿  enemywindow.cpp
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(25,30): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(27,22): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(27,29): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(28,22): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(28,29): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(29,22): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(29,29): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(30,22): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(30,29): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(31,22): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(31,29): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(37,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(37,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(38,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(38,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(39,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(39,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(40,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(40,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(41,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(41,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(42,34): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(42,27): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(43,34): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(43,27): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(44,34): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(44,27): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(45,34): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(45,27): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(46,34): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(46,27): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(47,40): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(47,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(48,40): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(48,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(49,40): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(49,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(50,40): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(50,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(51,41): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(51,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(30,30): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(32,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(32,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(33,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(33,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(34,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(34,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(35,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(35,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(36,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(36,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(42,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(42,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(43,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(43,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(44,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(44,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(45,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(45,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(46,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(46,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(47,34): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(47,27): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(48,34): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(48,27): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(49,34): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(49,27): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(50,34): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(50,27): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(51,34): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(51,27): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(52,40): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(52,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(53,40): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(53,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(54,40): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(54,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(55,40): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(55,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(56,41): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\ITU\OOP\slaythespire\slaythespire\src\enemywindow.cpp(56,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   slaythespire.vcxproj -> C:\ITU\OOP\slaythespire\x64\Debug\slaythespire.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.

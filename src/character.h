@@ -13,7 +13,7 @@ protected:
 public:
 	Character();
 	Character(String n, int hp);
-	void apply_damage(int amount);
+	virtual void apply_damage(int amount);
 	void heal(int amount);
 	virtual void die();
 	String getname();

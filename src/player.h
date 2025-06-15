@@ -23,6 +23,7 @@ private:
 	MyVector<Relic> relics;*/
 public:
 	MyVector<Card> hand;
+	int energy;
 	Player(String n, int hp, int g, Card* h);
 	void draw_card();
 	void play_card(int index);
@@ -30,6 +31,8 @@ public:
 	void use_potion(int index);
 	void apply_relic(int index);
 	void add_item(Item item);
+	int getblock();
+	void apply_damage(int amount) override;
 };
 
 #endif

@@ -10,7 +10,7 @@ class Player;
 
 class Card {
 public:
-	virtual void play(Player player, Enemy enemy);
+	virtual void play(Player& player, Enemy& enemy);
 	String type;
 	int cost;
 	int amount;
