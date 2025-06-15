@@ -5,6 +5,7 @@
 #include "src/enemy.h"
 #include "src/enemywindow.h"    
 #include "src/card.h"
+#include "src/gameover.h"
 using namespace std;
 
 int hand_size = 5;
@@ -45,7 +46,7 @@ int main() {
         else if (current_screen == 1)
             current_screen = enemywindow(enemy_level_background, playersprite, enemysprite, ironclad, slaver, turn);
         else if (current_screen == -1)
-            DrawTexture(background, 0, 0, WHITE);
+            gameoverwindow();
         else if (current_screen == 2)
             DrawTexture(background, 0, 0, YELLOW);
 
